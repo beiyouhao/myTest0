@@ -62,6 +62,8 @@ public class myThread1 implements Runnable{
     }
 
     public static void main(String[] args){
+        writeToFile();
+        readFromFile();
         myThread1 t = new myThread1();
         new Thread(t,"A").start();
         new Thread(t,"B").start();
